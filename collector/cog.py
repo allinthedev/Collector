@@ -44,7 +44,7 @@ class Collector(commands.GroupCog):
         """
         player, _ = await Player.get_or_create(discord_id=interaction.user.id)
         if await CollectorInstance.filter(player=player, collector=collector).exists():
-            await interaction.response.send_message("You've claimed this collector!", ephemeral=True)
+            await interaction.response.send_message("You've claimed this collector card!", ephemeral=True)
             return
 
         await interaction.response.defer(thinking=True)
