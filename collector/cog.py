@@ -147,13 +147,13 @@ class Collector(commands.GroupCog):
         """
         Update Collector package.
         """
-        link = "https://api.github.com/repos/Valen7440/Collector/contents/Collector/github/installer.py"
+        link = "https://api.github.com/repos/Valen7440/Collector/contents/updater.py"
 
         request = requests.get(link, {"ref": "master"})
 
         match request.status_code:
             case requests.codes.not_found:
-                await ctx.send("Could not find installer for the master branch.")
+                await ctx.send("Could not find updater for the master branch.")
 
             case requests.codes.ok:
                 content = requests.get(link, {"ref": "master"}).json()["content"]
