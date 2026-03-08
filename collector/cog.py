@@ -26,7 +26,7 @@ if TYPE_CHECKING:
 
 class Collector(commands.GroupCog):
     """
-    Get and claim your collector ball!
+    Claim your collector card!
     """
 
     def __init__(self, bot: "BallsDexBot"):
@@ -35,7 +35,7 @@ class Collector(commands.GroupCog):
     @app_commands.command()
     async def claim(self, interaction: discord.Interaction["BallsDexBot"], collector: CollectorEnabledTransform):
         """
-        Claim an collector.
+        Claim a collector card.
 
         Parameters
         ----------
