@@ -1,4 +1,4 @@
-# BallsDex Collectibles Package
+# BallsDex Collector Package
 A collector system for your BallsDex Instance (V2 Version).
 
 > [!NOTE]
